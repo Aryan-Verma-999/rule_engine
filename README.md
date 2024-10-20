@@ -58,6 +58,47 @@ The rules created in the application are evaluated against the following sample 
   "experience": 3
 }
 ```
+## API Endpoints
+### 1. Create Rule
+- Endpoint: /api/create_rule
+- Method: POST
+- Request Body:
+```json
+{
+  "name": "rule_name",
+  "rule": "age > 30 AND salary > 50000"
+}
+```
+#### Response:
+- Success: {"message": "Rule 'rule_name' created!"}
+- Error: {"error": "Invalid input"}
+### 2. Combine Rules
+- Endpoint: /api/combine_rules
+- Method: POST
+- Request Body:
+```json
+{
+  "name": "combined_rule_name",
+  "rules": ["rule1", "rule2"],
+  "operator": "AND"
+}
+```
+#### Response:
+- Success: {"message": "Combined rule 'combined_rule_name' created!"}
+- Error: {"error": "Invalid input"}
+### 3. Evaluate Rule
+- Endpoint: /api/evaluate_rule
+- Method: POST
+- Request Body:
+```json
+{
+  "name": "rule_name"
+}
+```
+#### Response:
+- Success: {"result": true/false}
+- Error: {"error": "Rule 'rule_name' does not exist."}
+
 ## How to Run
 ### 1. Install Dependencies
 Ensure you have Python installed. Install the required packages using the following command:
