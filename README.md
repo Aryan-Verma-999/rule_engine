@@ -124,3 +124,16 @@ A Tkinter window will pop up, where you can create, combine, and evaluate rules.
 - Creating Rules: You can create rules using operands (like age > 30) and logical operators (AND, OR).
 - Combining Rules: Multiple rules can be combined to form complex logic.
 - Evaluating Rules: The rules are evaluated against a predefined dataset using the conditions provided.
+
+# Bonus Features
+1. Saving and Loading Rules to/from a File:
+- Rules are saved to rules.json automatically on application exit.
+- Rules are loaded on application startup, so you can resume where you left off.
+2. Combining Rules:
+- Combine multiple existing rules using AND or OR operators to create more complex rules.
+3. Remote Rule Management via API:
+- Use the Flask API to create, evaluate, and manage rules remotely.
+4. Clear All Rules:
+- A button in the GUI and an endpoint in the API to clear all rules at once.
+5. Delete Specific Rules:
+- A button in the GUI and an endpoint in the API to delete a specific rule by its name.
