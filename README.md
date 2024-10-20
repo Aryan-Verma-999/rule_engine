@@ -125,7 +125,7 @@ A Tkinter window will pop up, where you can create, combine, and evaluate rules.
 - Combining Rules: Multiple rules can be combined to form complex logic.
 - Evaluating Rules: The rules are evaluated against a predefined dataset using the conditions provided.
 
-# Bonus Features
+## Bonus Features
 ### **1. Saving and Loading Rules to/from a File:**
 - Rules are saved to rules.json automatically on application exit.
 - Rules are loaded on application startup, so you can resume where you left off.
