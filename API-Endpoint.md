@@ -42,7 +42,7 @@
      }
      ```
 ## Add Headers
-- **Content-Type**: application/json
+- **Content-Type**: `application/json`
 
 # Example Data for Evaluation:
 The rules can be evaluated against the following predefined dataset:
